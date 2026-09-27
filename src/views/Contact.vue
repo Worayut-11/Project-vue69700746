@@ -1,5 +1,5 @@
 <template >
-    <div>
+    <div class="container mt-5">
         <h3>
             ติดต่อเรา
         </h3>
