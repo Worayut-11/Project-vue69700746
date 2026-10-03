@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <router-link class="navbar-brand fw-bold" to="/">Navbar</router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,6 +15,12 @@
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/contact">Contact</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/grade">Grade</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/api-golds">API Golds</router-link>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -45,5 +51,16 @@
 
 .navbar {
   text-align: left;
+  background-color: #9f7dce;  /* สีพื้น navbar */
 }
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: rgb(29, 4, 4);                /* สีตัวอักษร */
+}
+
+.navbar .nav-link.active {
+  color: #ffd43b;              /* สีเมนูของหน้าที่เปิดอยู่ */
+}
+
 </style>

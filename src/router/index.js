@@ -19,6 +19,15 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+  },
+   {
+    path: '/grade',
+    name: 'grade',
+    component: () => import(/* webpackChunkName: "grade" */ '../views/Grade.vue')
+  },  {
+    path: '/api-golds',
+    name: 'api-golds',
+    component: () => import(/* webpackChunkName: "api-golds" */ '../views/Api_golds.vue')
   }
 ]
 
@@ -27,5 +36,6 @@ const router = createRouter({
   linkExactActiveClass: 'active',
   routes
 })
+
 
 export default router
