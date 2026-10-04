@@ -16,20 +16,16 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/contact">Contact</router-link>
           </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/grade">Grade</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/api-golds">API Golds</router-link>
-          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
+              API
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="/grade">ตัดเกรด</a></li>
+              <li><a class="dropdown-item" href="/api-products">สินค้า</a></li>
+              <li><a class="dropdown-item" href="/api-golds">ราคาทอง</a></li>
+              <li><a class="dropdown-item" href="/product_table">Product Table</a></li>
+              <li><a class="dropdown-item" href="/user">User List</a></li>
             </ul>
           </li>
         </ul>

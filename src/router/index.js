@@ -28,7 +28,22 @@ const routes = [
     path: '/api-golds',
     name: 'api-golds',
     component: () => import(/* webpackChunkName: "api-golds" */ '../views/Api_golds.vue')
+  },
+  {
+    path: '/api-products',
+    name: 'api-products',
+    component: () => import(/* webpackChunkName: "api-products" */ '../views/Product_api.vue')
+  },  {
+    path: '/product_table',
+    name: 'product_table',
+    component: () => import(/* webpackChunkName: "product_table" */ '../views/Product_table.vue')
+  },
+  {
+    path: '/user',
+    name: 'user',
+    component: () => import(/* webpackChunkName: "user" */ '../views/User.vue')
   }
+  
 ]
 
 const router = createRouter({
